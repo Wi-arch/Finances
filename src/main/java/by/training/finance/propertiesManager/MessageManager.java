@@ -1,11 +1,11 @@
-package by.training.finance.message;
+package by.training.finance.propertiesManager;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class MessageManager {
 
-	private final static String PATH = "by.training.finance.message.messages";
+	private final static String PATH = "messages.messages";
 	private final static Locale RUSSIAN_LOCALE = new Locale("ru", "RU");
 	private static ResourceBundle resourceBundle = ResourceBundle.getBundle(PATH);
 
@@ -22,6 +22,6 @@ public class MessageManager {
 
 	public static void setEnglishLocale() {
 		resourceBundle = ResourceBundle.getBundle(PATH, Locale.ENGLISH);
-	}	
+	}
 
 }

@@ -1,6 +1,6 @@
 package by.training.finance.view;
 
-import static by.training.finance.message.MessageManager.getMessage;
+import static by.training.finance.propertiesManager.MessageManager.getMessage;
 
 import java.util.HashMap;
 import java.util.List;

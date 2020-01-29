@@ -11,7 +11,7 @@ import by.training.finance.dao.CardDAO;
 import by.training.finance.dao.UserDAO;
 import by.training.finance.dao.exception.DAOException;
 import by.training.finance.dao.factory.DAOFactory;
-import by.training.finance.message.MessageManager;
+import by.training.finance.propertiesManager.MessageManager;
 import by.training.finance.service.CardService;
 import by.training.finance.service.TransactionService;
 import by.training.finance.service.exception.ServiceException;
