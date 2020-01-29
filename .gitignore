@@ -1,0 +1,9 @@
+# Compiled class file
+*.class
+
+*.project
+*.classpath
+/bin
+/.settings
+/.idea
+/target
