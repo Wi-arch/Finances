@@ -3,7 +3,7 @@ package by.training.finance.service;
 import java.util.List;
 
 import by.training.finance.bean.Message;
-import by.training.finance.service.exception.ServiceException;
+import by.training.finance.exception.ServiceException;
 
 public interface MessageService {
 

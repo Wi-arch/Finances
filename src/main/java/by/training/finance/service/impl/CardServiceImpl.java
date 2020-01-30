@@ -9,23 +9,23 @@ import by.training.finance.bean.Currency;
 import by.training.finance.bean.User;
 import by.training.finance.dao.CardDAO;
 import by.training.finance.dao.UserDAO;
-import by.training.finance.dao.exception.DAOException;
-import by.training.finance.dao.factory.DAOFactory;
-import by.training.finance.propertiesManager.MessageManager;
+import by.training.finance.exception.DAOException;
+import by.training.finance.exception.ExistsCardException;
+import by.training.finance.exception.IllegalCardNumberException;
+import by.training.finance.exception.InvalidAmountException;
+import by.training.finance.exception.LockedCardException;
+import by.training.finance.exception.NotEnoughMoneyException;
+import by.training.finance.exception.NotExistingCardException;
+import by.training.finance.exception.NotExistingUserException;
+import by.training.finance.exception.NullCurrencyException;
+import by.training.finance.exception.ServiceException;
+import by.training.finance.factory.DAOFactory;
+import by.training.finance.factory.ServiceFactory;
+import by.training.finance.manager.MessageManager;
 import by.training.finance.service.CardService;
 import by.training.finance.service.TransactionService;
-import by.training.finance.service.exception.ServiceException;
-import by.training.finance.service.exception.cardservice.ExistsCardException;
-import by.training.finance.service.exception.cardservice.IllegalCardNumberException;
-import by.training.finance.service.exception.cardservice.InvalidAmountException;
-import by.training.finance.service.exception.cardservice.LockedCardException;
-import by.training.finance.service.exception.cardservice.NotEnoughMoneyException;
-import by.training.finance.service.exception.cardservice.NotExistingCardException;
-import by.training.finance.service.exception.cardservice.NullCurrencyException;
-import by.training.finance.service.exception.userservice.NotExistingUserException;
-import by.training.finance.service.factory.ServiceFactory;
-import by.training.finance.service.validator.CardValidator;
-import by.training.finance.service.validator.UserValidator;
+import by.training.finance.validator.CardValidator;
+import by.training.finance.validator.UserValidator;
 
 public class CardServiceImpl implements CardService {
 

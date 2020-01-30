@@ -3,7 +3,7 @@ package by.training.finance.dao;
 import java.util.List;
 
 import by.training.finance.bean.Message;
-import by.training.finance.dao.exception.DAOException;
+import by.training.finance.exception.DAOException;
 
 public interface MessageDAO {
 

@@ -5,20 +5,20 @@ import java.util.List;
 import by.training.finance.bean.Card;
 import by.training.finance.bean.User;
 import by.training.finance.dao.UserDAO;
-import by.training.finance.dao.exception.DAOException;
-import by.training.finance.dao.factory.DAOFactory;
+import by.training.finance.exception.DAOException;
+import by.training.finance.exception.ExistsLoginException;
+import by.training.finance.exception.IncorrectLoginException;
+import by.training.finance.exception.IncorrectPasswordException;
+import by.training.finance.exception.InvalidLoginException;
+import by.training.finance.exception.InvalidPasswordException;
+import by.training.finance.exception.NotExistingUserException;
+import by.training.finance.exception.ServiceException;
+import by.training.finance.exception.WrongConfirmPasswordException;
+import by.training.finance.factory.DAOFactory;
+import by.training.finance.factory.ServiceFactory;
 import by.training.finance.service.CardService;
 import by.training.finance.service.UserService;
-import by.training.finance.service.exception.ServiceException;
-import by.training.finance.service.exception.userservice.ExistsLoginException;
-import by.training.finance.service.exception.userservice.IncorrectLoginException;
-import by.training.finance.service.exception.userservice.IncorrectPasswordException;
-import by.training.finance.service.exception.userservice.InvalidLoginException;
-import by.training.finance.service.exception.userservice.InvalidPasswordException;
-import by.training.finance.service.exception.userservice.NotExistingUserException;
-import by.training.finance.service.exception.userservice.WrongConfirmPasswordException;
-import by.training.finance.service.factory.ServiceFactory;
-import by.training.finance.service.validator.UserValidator;
+import by.training.finance.validator.UserValidator;
 
 public class UserServiceImpl implements UserService {
 

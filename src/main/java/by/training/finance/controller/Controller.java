@@ -2,9 +2,9 @@ package by.training.finance.controller;
 
 import java.util.Map;
 
-import by.training.finance.controller.command.Command;
-import by.training.finance.controller.command.CommandNameManager;
-import by.training.finance.controller.command.impl.WrongRequest;
+import by.training.finance.command.Command;
+import by.training.finance.command.CommandNameManager;
+import by.training.finance.command.impl.WrongRequest;
 
 public class Controller {
 

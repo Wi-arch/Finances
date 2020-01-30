@@ -1,6 +1,6 @@
 package by.training.finance.view;
 
-import static by.training.finance.propertiesManager.MessageManager.getMessage;
+import static by.training.finance.manager.MessageManager.getMessage;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -12,8 +12,8 @@ import java.util.Scanner;
 import by.training.finance.bean.Card;
 import by.training.finance.bean.Currency;
 import by.training.finance.bean.Transaction;
+import by.training.finance.command.CommandNameManager;
 import by.training.finance.controller.Controller;
-import by.training.finance.controller.command.CommandNameManager;
 
 public class CardViewer {
 

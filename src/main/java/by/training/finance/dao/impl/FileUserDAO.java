@@ -11,7 +11,7 @@ import java.util.List;
 
 import by.training.finance.bean.User;
 import by.training.finance.dao.UserDAO;
-import by.training.finance.dao.exception.DAOException;
+import by.training.finance.exception.DAOException;
 
 public class FileUserDAO implements UserDAO {
 

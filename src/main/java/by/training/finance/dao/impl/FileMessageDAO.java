@@ -11,7 +11,7 @@ import java.util.List;
 
 import by.training.finance.bean.Message;
 import by.training.finance.dao.MessageDAO;
-import by.training.finance.dao.exception.DAOException;
+import by.training.finance.exception.DAOException;
 
 public class FileMessageDAO implements MessageDAO {
 

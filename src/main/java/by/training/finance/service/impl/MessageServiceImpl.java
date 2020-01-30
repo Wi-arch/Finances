@@ -7,14 +7,14 @@ import by.training.finance.bean.Message;
 import by.training.finance.bean.User;
 import by.training.finance.dao.MessageDAO;
 import by.training.finance.dao.UserDAO;
-import by.training.finance.dao.exception.DAOException;
-import by.training.finance.dao.factory.DAOFactory;
+import by.training.finance.exception.BlankTextException;
+import by.training.finance.exception.DAOException;
+import by.training.finance.exception.InvalidMessageReceiverException;
+import by.training.finance.exception.NotExistingUserException;
+import by.training.finance.exception.ServiceException;
+import by.training.finance.factory.DAOFactory;
 import by.training.finance.service.MessageService;
-import by.training.finance.service.exception.ServiceException;
-import by.training.finance.service.exception.messageservice.BlankTextException;
-import by.training.finance.service.exception.messageservice.InvalidMessageReceiverException;
-import by.training.finance.service.exception.userservice.NotExistingUserException;
-import by.training.finance.service.validator.UserValidator;
+import by.training.finance.validator.UserValidator;
 
 public class MessageServiceImpl implements MessageService {
 

@@ -7,15 +7,15 @@ import java.util.List;
 import by.training.finance.bean.Currency;
 import by.training.finance.bean.Transaction;
 import by.training.finance.dao.TransactionDAO;
-import by.training.finance.dao.exception.DAOException;
-import by.training.finance.dao.factory.DAOFactory;
+import by.training.finance.exception.DAOException;
+import by.training.finance.exception.IllegalCardNumberException;
+import by.training.finance.exception.InvalidAmountException;
+import by.training.finance.exception.NotExistingCardException;
+import by.training.finance.exception.NullCurrencyException;
+import by.training.finance.exception.ServiceException;
+import by.training.finance.factory.DAOFactory;
 import by.training.finance.service.TransactionService;
-import by.training.finance.service.exception.ServiceException;
-import by.training.finance.service.exception.cardservice.IllegalCardNumberException;
-import by.training.finance.service.exception.cardservice.InvalidAmountException;
-import by.training.finance.service.exception.cardservice.NotExistingCardException;
-import by.training.finance.service.exception.cardservice.NullCurrencyException;
-import by.training.finance.service.validator.CardValidator;
+import by.training.finance.validator.CardValidator;
 
 public class TransactionServiceImpl implements TransactionService {
 

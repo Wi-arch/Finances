@@ -1,14 +1,14 @@
 package by.training.finance.view;
 
-import static by.training.finance.propertiesManager.MessageManager.getMessage;
+import static by.training.finance.manager.MessageManager.getMessage;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+import by.training.finance.command.CommandNameManager;
 import by.training.finance.controller.Controller;
-import by.training.finance.controller.command.CommandNameManager;
-import by.training.finance.propertiesManager.MessageManager;
+import by.training.finance.manager.MessageManager;
 
 public class Main {
 

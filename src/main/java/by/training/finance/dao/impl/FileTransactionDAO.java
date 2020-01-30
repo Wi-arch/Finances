@@ -12,7 +12,7 @@ import java.util.List;
 import by.training.finance.bean.Transaction;
 import by.training.finance.bean.User;
 import by.training.finance.dao.TransactionDAO;
-import by.training.finance.dao.exception.DAOException;
+import by.training.finance.exception.DAOException;
 
 public class FileTransactionDAO implements TransactionDAO {
 
